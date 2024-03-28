@@ -26,7 +26,7 @@ app.post("/login", async (req, res, next) => {
 		 res.sendStatus(500);
 	}
 });
-
+ 
 app.get("/contact/:id/:name", (req, res) => {
     res.send(
         `<h1>Contact</h1> Параметр: ${req.params.id} від ${req.params.name} та ${req.query.text}`
@@ -46,3 +46,4 @@ app.get("/contact", (req, res) => {
 app.listen(3000, () => {
     console.log("Example app listening on port 3000!");
 });
+
